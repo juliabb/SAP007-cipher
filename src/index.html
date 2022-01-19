@@ -1,14 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M3ns4agem S3cret4</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/icon">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <main>
+      <div id="container">
+        <div class="image">
+        <img src="android-chrome-512x512.png" alt="Logo">
+      </div>
+      <div class="box-text">
+        <h1> M3ns4agem S3cret4</h1>
+        <p>Mensagem secreta para se comunicar com quem quiser de forma confidencial e segura. Utilizando a famosa <a href="https://pt.planetcalc.com/1434/">Cifra de César</a> que utiliza um sistema de deslocamento.</p>
+      </div>
     </div>
+      
+      <section class="cifradora">
+        <section class="box-cifrar">
+          <h3>Digite seu texto a ser Cifrado</h3>
+          <label for="textoCifrar"></label>
+          <textarea id="textoCifrar" type="string" placeholder="Digite sua mensagem"></textarea>
+          <h3>Indique quantas posições você deseja deslocar para a sua cifra</h3>
+          <label for="posicoesCifra"></label>
+          <input id="posicoesCifra" type="number" min="0" max="25" placeholder="2" required>
+          <button id="cifrar">Cifrar</button>
+          <section class="resposta">
+            <h4 id="espacoCifra"></h4>
+          </section>
+  
+        </section>
+        <section class="box-decifrar">
+          <h3>Digite seu texto a ser Decifrado</h3>
+          <label for="textoDecifrar"></label>
+          <textarea id="textoDecifrar" type="string" placeholder="Digite sua mensagem"></textarea>
+          <h3>Indique quantas posições você deseja deslocar para a sua cifra</h3>
+          <label for="posicoesDecifrar"></label>
+          <input id="posicoesDecifrar" type="number"  min="0" max="25" placeholder="2" required>
+          <button id="decifrar">Decifrar</button>
+          <section class="resposta">
+            <h4 id="espacoDescifra"></h4>
+          </section>
+        </section>
+      </section>
+        </main>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

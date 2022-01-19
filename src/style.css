@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Share+Tech&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+:root {
+
+    /* Fonts/ Fontes*/
+    --title-font: 'Nunito', sans-serif;
+    --body-font: 'Share Tech', sans-serif;
+}
+
+body {
+    margin: auto 5rem;
+}
+
+h1 {
+    font-family: var(--title-font);
+    text-align: center;
+    margin: 2rem;
+}
+
+p {
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: large;
+    color: grey;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+.form form > input {
+    margin: 1rem auto;
+}
+
+main #container {
+    display: flex;
+}
+
+main #container img {
+    display: flex;
+    width: 60px;
+    margin-top: 32px;
+}
