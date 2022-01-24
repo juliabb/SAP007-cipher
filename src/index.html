@@ -11,34 +11,36 @@
   </head>
   <body>
     <main>
+      <div class="logo-text">
         <div class="image">
           <img src="logo-512x512.png" alt="Logo" />
         </div>
-        <div class="box-text">
           <h1>M3ns4agem S3cret4</h1>
+        </div> 
+        <div class="box-text">
           <p>
             Mensagem secreta é um sistema para se comunicar com quem quiser de forma
             confidencial e segura. Utilizando a famosa
-            <a href="https://pt.planetcalc.com/1434/">Cifra de César</a> que
-            utiliza um sistema de deslocamento. ÁPara utilizar é simples basta escrever sua palavra/frase e escolher o número de deslocamento, sendo da esquerda a direita, Ex.: se você colocar a letra 'A' com deslocamento '3' o resultado será 'D'.
+            <a href="https://pt.planetcalc.com/1434/" target="_blank">Cifra de César</a> que
+            utiliza um sistema de deslocamento. Para utilizar é simples basta escrever sua palavra/frase e escolher o número de deslocamento, sendo da esquerda a direita, Ex.: se você colocar a letra 'A' com deslocamento '3' o resultado será 'D'. E para decifrar basta fazer o mesmo cole a cifra que recebeu e informe qual foi o deslocamento utilizado.
           </p>
         </div>
-
 
         <form>
           <label for="mensagemCrip">
             <span>Digite seu texto a ser Cifrado:</span>
             <input class="input" type="text" id="textCifra" />
           </label>  
-        <div>
+        <div class="offset">
           <span>Deslocamento: </span><input type="number" id="offset_1" /> <br>
           <button class="bttnOffset" id="bttnCrip"> Cifrar &gt;</button>
         </div>
+        <hr class="line">
           <label for="mensagemDeci">
             <span>Digite seu texto a ser Decifrado:</span>
             <input class="input" type="text" id="textDeci">
           </label>
-        <div>
+        <div class="offset">
           <span>Deslocamento: <input type="number" id="offset_2"></span> <br>
           <button class="decifra" id="bttnDeci"> Decifrar &lt;</button>
         </div>

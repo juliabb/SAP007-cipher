@@ -15,20 +15,25 @@
 
 body {
     margin: auto 5rem;
+    background-image: url(https://images.pexels.com/photos/568025/pexels-photo-568025.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #030303;
 }
 
 h1 {
     font-family: var(--title-font);
     text-align: center;
-    margin: 2rem;
+    justify-content: center;
+    color: aliceblue;
 }
 
-p {
+main .box-text p {
     text-align: center;
     font-family: var(--body-font);
     font-size: large;
-    color: grey;
     padding: 20px;
+    background-color: rgba(240, 248, 255, 0.600);
 }
 
 a {
@@ -36,16 +41,45 @@ a {
     color: brown;
 }
 
-.form form > input {
-    margin: 1rem auto;
-}
-
-main #container {
+main .logo-text {
+    justify-content: center;
     display: flex;
-}
-
-main #container img {
-    display: flex;
-    width: 60px;
+    align-items: center;
     margin-top: 32px;
+}
+
+main .image img {
+    width: 60px;
+    display: flex;
+    margin-right: 32px;
+}
+
+main .box-text p {
+    margin: 32px auto;
+}
+
+main form label span{
+    font-family: var(--body-font);
+    color: aliceblue;
+    font-size: large;
+    background-color: #0303039f;
+    margin: auto 10px;
+    border-radius: 4px;
+}
+
+main form span {
+    font-family: var(--body-font);
+    color: aliceblue;
+    font-size: large;
+    background-color: #0303039f; 
+    margin: auto 10px;
+}
+
+main form button{
+    font-family: var(--title-font);
+}
+
+main form .line{   
+    margin: 40px auto;
+    width: 100%;
 }
