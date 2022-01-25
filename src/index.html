@@ -19,21 +19,20 @@
         </div> 
         <div class="box-text">
           <p>
-            Mensagem secreta é um sistema para se comunicar com quem quiser de forma
-            confidencial e segura. Utilizando a famosa
-            <a href="https://pt.planetcalc.com/1434/" target="_blank">Cifra de César</a> que
+            Mensagem secreta é um sistema para se comunicar de forma confidencial e segura, utilizado para e-mails e mensagens instantâneas. Utiliza a famosa
+            <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">Cifra de César</a> que
             utiliza um sistema de deslocamento. Para utilizar é simples basta escrever sua palavra/frase e escolher o número de deslocamento, sendo da esquerda a direita, Ex.: se você colocar a letra 'A' com deslocamento '3' o resultado será 'D'. E para decifrar basta fazer o mesmo cole a cifra que recebeu e informe qual foi o deslocamento utilizado.
           </p>
         </div>
 
         <form>
-          <label for="mensagemCrip">
+          <label for="mensagemCifra">
             <span>Digite seu texto a ser Cifrado:</span>
             <input class="input" type="text" id="textCifra" />
           </label>  
         <div class="offset">
           <span>Deslocamento: </span><input type="number" id="offset_1" /> <br>
-          <button class="bttnOffset" id="bttnCrip"> Cifrar &gt;</button>
+          <button class="bttnCifra" id="bttnCifra"> Cifrar &gt;</button>
         </div>
         <hr class="line">
           <label for="mensagemDeci">
@@ -42,7 +41,7 @@
           </label>
         <div class="offset">
           <span>Deslocamento: <input type="number" id="offset_2"></span> <br>
-          <button class="decifra" id="bttnDeci"> Decifrar &lt;</button>
+          <button class="bttnDeci" id="bttnDeci"> Decifrar &lt;</button>
         </div>
         <div class="answer">
           <p id="answerCifra"></p>

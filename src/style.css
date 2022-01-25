@@ -83,3 +83,8 @@ main form .line{
     margin: 40px auto;
     width: 100%;
 }
+
+main .anwser {
+    background: aliceblue;
+    color: black;
+}

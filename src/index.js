@@ -1,17 +1,15 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
+console.log(cipher); //no console sei a letra F antes mesmo de declarar!! Descobrir o por que ---------------
 
 
 //Interações (DOM, EventListener, document.getElement)
 
 //Pegando a interação com o botão
-function encode(){
-document.getElementById("cifrar").addEventListener('click', cifrar)
+const botaoCifra = document.getElementById('bttnCifra');
 
-}
+function bttnCifra (){
+     document.getElementById("bttnCifra").addEventListener('click', bttnCifra)
 
-function decode (){
-document.getElementById("decifrar").addEventListener('click', decifrar)
 }
 
