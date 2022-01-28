@@ -55,7 +55,9 @@ main .image img {
 }
 
 main .box-text p {
-  margin: 32px 6rem;
+  margin: 32px 12rem;
+  padding: 4rem 5rem;
+  font-size: larger;
 }
 
 main form {
