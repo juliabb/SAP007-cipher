@@ -1,19 +1,16 @@
 
 const cipher = {
-  encode: function (offset,  text) {
-    
-    let texto = ""; 
-    for (let i = 0; i < texto.length; i++) {
-      let element = texto[i];
-      let codigoAsc = element.charCodeAt (0); //código asc 65 - 90
-      let encodeValue = ((codigoAsc - 65 + offset) % 26 + 65); //lógica da cifra, aqui a letra está em 0 - 25
-      
-      let charCode = String.fromCharCode (encodeValue); //aqui ele transforma em letra no metodo ASC 
-
-      texto = texto + charCode; //transformando o texto (resposta) em charCode 
+  encode (offset,  string) {
+    let text = ""; 
+    let quantiLetras = string.length
+    for (let i = 0; i < quantiLetras.length; i++) {
+      let codigoAsc = element.charCodeAt(i); //código asc 65 - 90
+      let encodeValue = ((codigoAsc - 65 + offset)) % 26 + 65; //lógica da cifra, aqui a letra está em 0 - 25
+      let text = text.concat(String.fromCharCode(encodeValue)); //aqui ele transforma em letra no metodo ASC 
 
     }
-      return texto;
+      return text; 
+    console.log(text);
   }
 };
 
