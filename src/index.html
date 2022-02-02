@@ -13,13 +13,13 @@
 
 <body>
   <main>
-    <div class="logo-text">
+    <section class="logo-text">
       <div class="image">
         <img src="logo-512x512.png" alt="Logo" />
       </div>
       <h1>M3ns4agem S3cret4</h1>
-    </div>
-    <div class="box-text">
+    </section>
+    <section class="box-text">
       <p>
         Mensagem secreta é um sistema para se comunicar de forma confidencial e segura, utilizado para e-mails e
         mensagens instantâneas. Utiliza a famosa
@@ -29,7 +29,7 @@
         será 'D'. E para decifrar basta fazer o mesmo cole a cifra que recebeu e informe qual foi o deslocamento
         utilizado.
       </p>
-    </div>
+    </section>
 
     <form>
       <div class="enter-text">
@@ -39,27 +39,28 @@
 
       <div class="offset">
         <label for="offset">Escolha o deslocamento:</label>
+       <input type="number" id="offset" min="1" max="25" required/>
 
-       <input type="number" id="offset" min="1" max="26" required/>
-
-        <div class="buttons">
-          <button class="bttnCifra" id="bttnCifra" type="submit"> Cifrar </button>
-          <button class="bttnDeci" id="bttnDeci" type="submit"> Decifrar </button>
+       <button class="bttnCifra buttons" id="bttnCifra"> Cifrar </button>
+       <button class="bttnDeci buttons" id="bttnDeci"> Decifrar </button>
         </div>
-
-      </div>
-      </div>
-      <div class="answer">
-        <div id="answerCifra" class="result"></div>
-        <div id="answerDeci" class="result"></div>
       </div>
     </form>
+    <section class="answer">
+      <textarea id="answers" class="result" rows="10" cols="40"></textarea>
+    </section>
 
 
   </main>
   <footer class="credit">
     <img src="logo-512x512.png" alt="Logo" class="image">
     <p>Desenvolvido por Julia Benedicto &copy Copyright Cipher - 2022</p>
+
+    <section class="icons">
+    <a href="https://github.com/juliabb"><img src="https://img.icons8.com/material-outlined/24/000000/github.png"/></a>
+
+    <a href="https://www.linkedin.com/in/julia-cruz-7aa339183/"><img src="https://img.icons8.com/material-sharp/24/000000/linkedin--v1.png"/></a>
+  </section>
   </footer>
 
   <script src="index.js" type="module"></script>

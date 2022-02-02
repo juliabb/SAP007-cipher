@@ -1,141 +1,162 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Share+Tech&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Share+Tech&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-:root {
-  /* Fonts/ Fontes*/
-  --title-font: "Nunito", sans-serif;
-  --body-font: "Share Tech", sans-serif;
-}
+  :root {
+    /* Fonts/ Fontes*/
+    --title-font: "Nunito", sans-serif;
+    --body-font: "Share Tech", sans-serif;
+  }
 
-body {
-  background-image: url(https://images.pexels.com/photos/568025/pexels-photo-568025.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #030303;
-}
+  body {
+    background-image: url(https://images.pexels.com/photos/568025/pexels-photo-568025.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #030303;
+  }
 
-h1 {
-  font-family: var(--title-font);
-  text-align: center;
-  justify-content: center;
-  color: aliceblue;
-  text-shadow: 3px 1px 3px black;
-}
+  h1 {
+    font-family: var(--title-font);
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    text-shadow: 3px 1px 3px black;
+  }
 
-main .box-text p {
-  text-align: center;
-  font-family: var(--body-font);
-  font-size: large;
-  padding: 20px;
-  background-color: rgba(240, 248, 255, 0.6);
+  main .box-text p {
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: large;
+    padding: 20px;
+    background-color: rgba(240, 248, 255, 0.6);
+    
+  }
+
+  a {
+    text-decoration: none;
+    color: brown;
+  }
+
+  main .logo-text {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+  }
+
+  main .image img {
+    width: 60px;
+    display: flex;
+    margin-right: 32px;
+  }
+
+  main .box-text p {
+    margin: 32px 12rem;
+    padding: 4rem 5rem;
+    font-size: larger;
+  }
+
+  main form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  main form .enter-text{
+    margin: 2rem 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  main form label {
+    font-family: var(--body-font);
+    color: aliceblue;
+    font-size: large;
+    background-color: #0303039f;
+    padding: 1px 4px;
+    border-radius: 2px;
+    margin-right: 25px;
+  }
+
+  main form textarea {
+    resize: none;
+    border: 2px solid;
+    padding: 3px;
+    word-wrap: break-word;
+    outline: none; /*remove a borda do click*/
+    margin-top: 2rem;
+  }
+
+  main form .offset {
+    text-align: left;
+    margin-right: 10rem;
+    display: inherit;
+  }
+
+  main form #offset {
+    margin-right: 15px;
+  }
+
+  main form .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10px;
+  }
+
+  main form .buttons {
+    font-family: var(--title-font);
+    background: #030303;
+    color: aliceblue;
+    font-weight: bolder;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  main form .buttons:hover {
+    background: grey;
+    transition: 1s;
+  }
+
+  main .answer {
+    display: flex;
+    justify-content: center;
+  }
+
+  main .answer #answer {
+    word-wrap: break-word;
+    resize: none;
+    border: 2px solid;
+    padding: 3px;
+    outline: none; /*remove a borda do click*/
+  }
+
+  .credit {
+    margin-top: 10rem;
+    text-align: center;
+    font-family: var(--body-font);
+    padding: 3rem;
+    background-color: rgba(240, 248, 255, 0.6);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  footer .image{
+    width: 60px;
+    display: flex;
+    margin-right: 32px;
+    display: flex;
+  } 
+
+  footer .icons {
+    display: initial;
+  }
+
   
-}
-
-a {
-  text-decoration: none;
-  color: brown;
-}
-
-main .logo-text {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  margin-top: 32px;
-}
-
-main .image img {
-  width: 60px;
-  display: flex;
-  margin-right: 32px;
-}
-
-main .box-text p {
-  margin: 32px 12rem;
-  padding: 4rem 5rem;
-  font-size: larger;
-}
-
-main form {
-  display: flex;
-  align-items: center;
-}
-
-main form .enter-text{
-  margin: 2rem 5rem;
-}
-
-main form label {
-  font-family: var(--body-font);
-  color: aliceblue;
-  font-size: large;
-  background-color: #0303039f;
-  padding: 1px 4px;
-  border-radius: 2px;
-  margin-right: 5rem;
-}
-
-main form textarea {
-  resize: none;
-  border: 2px solid;
-  padding: 3px;
-  word-wrap: break-word;
-  outline: none; /*remove a borda do click*/
-  margin-top: 2rem;
-}
-
-main form .offset {
-  text-align: center;
-  text-align: left;
-  margin-right: 10rem;
-  
-}
-
-main form .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-main form button {
-  font-family: var(--title-font);
-  background: #030303;
-  color: aliceblue;
-  font-weight: bolder;
-  border: 1px solid gray;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-main form button:hover {
-  background: grey;
-  transition: 1s;
-}
-
-main form .line {
-  margin: 40px auto;
-  width: 100%;
-}
-
-.credit {
-  margin-top: 10rem;
-  text-align: center;
-  font-family: var(--body-font);
-  padding: 3rem;
-  background-color: rgba(240, 248, 255, 0.6);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-footer img {
-  width: 60px;
-  display: flex;
-  margin-right: 32px;
-  display: flex;
-}
