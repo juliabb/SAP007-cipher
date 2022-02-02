@@ -1,30 +1,63 @@
 const cipher = {
   encode: function (offset, string) {
-
     let textCode = "";
 
     for (let i = 0; i < string.length; i++) {
-      let cifrar = string.charCodeAt(i);
+
+      let cifrar = string.charCodeAt(i); //variavel que recebe a string
+
       if (cifrar >= 65 && cifrar <= 90) {
-        textCode += String.fromCharCode(((cifrar - 65 + offset) % 26) + 65);
+        textCode += String.fromCharCode(((cifrar - 65 + offset) % 26) + 65); // letras maiusculas
+      } else if (cifrar >= 97 && cifrar <= 122) {
+        textCode += String.fromCharCode(((cifrar - 97 + offset) % 26) + 65); // minusculas
+      } else if (cifrar >= 33 && cifrar <= 47) {
+        //caracteres especiais
+        textCode += string.charAt(i);
+      } else if (cifrar >= 58 && cifrar <= 64) {
+        //pontos
+        textCode += string.charAt(i);
+      } else if (cifrar == 128) {
+        //Ç
+        textCode += string.charAt(i);
+      } else if (cifrar == 135) {
+        //ç
+        textCode += string.charAt(i);
       } else if (cifrar == 32) {
-        textCode += textCode.charAt(i);
+        //espaço
+        textCode += string.charAt(i);
       }
     }
     return textCode;
   },
 
   decode: function (offset, string) {
-
     let textDecode = "";
 
     for (let i = 0; i < string.length; i++) {
       //laço para continuar enquanto ouver letras
-      let decifrar = string.charCodeAt(i);
+      let decifrar = string.charCodeAt(i); //decifrar recebe a string em ASCII
       if (decifrar >= 65 && decifrar <= 90) {
-        textDecode += String.fromCharCode(((decifrar - 65 - offset) % 26) + 65);
+        // se decifrar for maior ou igual a 65 e menor ou igual a 90
+        textDecode += String.fromCharCode(((decifrar - 65 - offset) % 26) + 65); //concatena (+=) a String
+
+      } else if (decifrar >= 97 && decifrar <= 122) {
+        textDecode += String.fromCharCode(((decifrar - 97 - offset) % 26) + 65);
+
+      } else if (decifrar >= 33 && decifrar <= 47) {
+        textDecode += string.charAt(i);
+
+      } else if (decifrar >= 58 && decifrar <= 64) {
+        textDecode += string.charAt(i);
+
+      } else if (decifrar == 128) {
+        textDecode += string.charAt(i);
+
+      } else if (decifrar == 135) {
+        textDecode += string.charAt(i);
+        
       } else if (decifrar == 32) {
-        textDecode += textDecode.charAt(i);
+        //se o decifrar for igual a 32 (no código asc é o espaço)
+        textDecode += string.charAt(i); //o texto mantem (no caso mantem o espaço)
       }
     }
     return textDecode;

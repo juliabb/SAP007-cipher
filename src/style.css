@@ -128,12 +128,14 @@
     justify-content: center;
   }
 
-  main .answer #answer {
+  main .answer #answers {
     word-wrap: break-word;
     resize: none;
     border: 2px solid;
     padding: 3px;
     outline: none; /*remove a borda do click*/
+    background: whitesmoke;
+    color: black;
   }
 
   .credit {
