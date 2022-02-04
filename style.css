@@ -1,0 +1,192 @@
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Share+Tech&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    /* Fonts/ Fontes*/
+    --title-font: "Nunito", sans-serif;
+    --body-font: "Share Tech", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth; /* scroll suave */
+  } 
+
+  head #home {
+    transition: 1.5s;
+  }
+  
+  body {
+    background-image: url(https://images.pexels.com/photos/568025/pexels-photo-568025.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #030303;
+  }
+
+  h1 {
+    font-family: var(--title-font);
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    text-shadow: 3px 1px 3px black;
+    font-size: xx-large; 
+  }
+
+  main .box-text p {
+    text-align: center;
+    font-family: var(--body-font);
+    background-color: rgb(240 248 255 / 60%);
+  }
+
+  a {
+    text-decoration: none;
+    color: brown;
+  }
+
+  main .logo-text {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+
+  main .image img {
+    width: 60px;
+    display: flex;
+    margin-right: 32px;
+  }
+
+  main .box-text p {
+    margin: 32px 12rem;
+    padding: 32px;
+    font-size: larger;
+  }
+
+  main form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  main form .enter-text{
+    margin: 2rem 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  main form label {
+    font-family: var(--body-font);
+    color: aliceblue;
+    font-size: large;
+    background-color: #0303039f;
+    padding: 4px 4px;
+    border-radius: 2px;
+    margin-right: 25px;
+  }
+
+  main form textarea {
+    resize: none;
+    border: 2px solid;
+    padding: 3px;
+    word-wrap: break-word;
+    outline: none; /*remove a borda do click*/
+    margin-top: 2rem;
+    font-family: var(--title-font);
+  }
+
+  main form .offset {
+    text-align: left;
+    margin-right: 10rem;
+    display: inherit;
+  }
+
+  main form #offset {
+    margin-right: 15px;
+    padding: 4px;
+  }
+
+  main form .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10px;
+  }
+
+  main form .buttons {
+    font-family: var(--title-font);
+    background: #030303;
+    color: aliceblue;
+    font-weight: bolder;
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 4px;
+  }
+
+  main form .buttons:hover {
+    background: grey;
+    transition: 1s;
+  }
+
+  main .answer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .answer .result-title {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    block-size: 32px;
+    font-family: var(--body-font);
+    color: aliceblue;
+    font-size: large;
+    background-color: #0303039f;
+    padding: 4px 4px;
+    border-radius: 2px;
+    margin-right: 25px;
+  }
+
+  main .answer #answers {
+    word-wrap: break-word;
+    resize: none;
+    border: 2px solid green;
+    outline: none;
+    background: whitesmoke;
+    color: black;
+    line-height: 20px;
+    border-radius: 6px;
+    padding: 6px;
+    font-family: var(--title-font);
+  }
+
+  .credit {
+    margin-top: 10rem;
+    text-align: center;
+    font-family: var(--body-font);
+    padding: 3rem;
+    background-color: rgba(240, 248, 255, 0.6);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  footer .image{
+    width: 60px;
+    display: flex;
+    margin-right: 32px;
+    display: flex;
+  } 
+
+  footer .icons {
+    display: initial;
+  }
+
+  
