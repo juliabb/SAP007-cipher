@@ -11,11 +11,20 @@
     --title-font: "Nunito", sans-serif;
     --body-font: "Share Tech", sans-serif;
   }
+  
+  html {
+    scroll-behavior: smooth; /* scroll suave */
+  } 
 
+  head #home {
+    transition: 1.5s;
+  }
+  
   body {
     background-image: url(https://images.pexels.com/photos/568025/pexels-photo-568025.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-color: #030303;
   }
 
@@ -25,15 +34,13 @@
     justify-content: center;
     color: aliceblue;
     text-shadow: 3px 1px 3px black;
+    font-size: xx-large; 
   }
 
   main .box-text p {
     text-align: center;
     font-family: var(--body-font);
-    font-size: large;
-    padding: 20px;
-    background-color: rgba(240, 248, 255, 0.6);
-    
+    background-color: rgb(240 248 255 / 60%);
   }
 
   a {
@@ -46,6 +53,7 @@
     display: flex;
     align-items: center;
     margin-top: 32px;
+    margin-bottom: 40px;
   }
 
   main .image img {
@@ -56,7 +64,7 @@
 
   main .box-text p {
     margin: 32px 12rem;
-    padding: 4rem 5rem;
+    padding: 32px;
     font-size: larger;
   }
 
@@ -77,7 +85,7 @@
     color: aliceblue;
     font-size: large;
     background-color: #0303039f;
-    padding: 1px 4px;
+    padding: 4px 4px;
     border-radius: 2px;
     margin-right: 25px;
   }
@@ -89,6 +97,7 @@
     word-wrap: break-word;
     outline: none; /*remove a borda do click*/
     margin-top: 2rem;
+    font-family: var(--title-font);
   }
 
   main form .offset {
@@ -99,6 +108,7 @@
 
   main form #offset {
     margin-right: 15px;
+    padding: 4px;
   }
 
   main form .buttons {
@@ -114,8 +124,8 @@
     color: aliceblue;
     font-weight: bolder;
     border: 1px solid gray;
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 6px;
+    padding: 4px;
   }
 
   main form .buttons:hover {
@@ -125,17 +135,35 @@
 
   main .answer {
     display: flex;
+    align-items: center;
     justify-content: center;
+  }
+
+  main .answer .result-title {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    block-size: 32px;
+    font-family: var(--body-font);
+    color: aliceblue;
+    font-size: large;
+    background-color: #0303039f;
+    padding: 4px 4px;
+    border-radius: 2px;
+    margin-right: 25px;
   }
 
   main .answer #answers {
     word-wrap: break-word;
     resize: none;
-    border: 2px solid;
-    padding: 3px;
-    outline: none; /*remove a borda do click*/
+    border: 2px solid green;
+    outline: none;
     background: whitesmoke;
     color: black;
+    line-height: 20px;
+    border-radius: 6px;
+    padding: 6px;
+    font-family: var(--title-font);
   }
 
   .credit {

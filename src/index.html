@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>M3ns4agem S3cret4</title>
+  <a href="index.html" id="home"><title>M3ns4agem S3cret4</title></a>
   <link rel="shortcut icon" href="favicon.ico" type="image/icon" />
 
   <link rel="stylesheet" href="style.css" />
@@ -40,28 +40,32 @@
 
       <div class="offset">
         <label for="offset">Escolha o deslocamento:</label>
-        <input type="number" id="offset" min="1" max="25" required />
+        <input type="number" id="offset" min="1" max="25" required/>
 
         <button class="bttnCifra buttons" id="bttnCifra"> Cifrar </button>
         <button class="bttnDeci buttons" id="bttnDeci"> Decifrar </button>
       </div>
     </form>
     <section class="answer">
-      <textarea id="answers" class="result" rows="10" cols="40" disabled></textarea>
+      <label class="result-title">Resultado</label>
+      <textarea id="answers" class="result" rows="10" cols="50" placeholder="Resultado" readonly></textarea>
     </section>
 
 
   </main>
   <footer class="credit">
-    <img src="logo-512x512.png" alt="Logo" class="image">
+    <a href="#home"><img src="logo-512x512.png" alt="Logo" class="image"></a>
     <p>Desenvolvido por Julia Benedicto &copy Copyright Cipher - 2022</p>
 
     <section class="icons">
-      <a href="https://github.com/juliabb"><img
-          src="https://img.icons8.com/material-outlined/24/000000/github.png" /></a>
+      <a href="https://github.com/juliabb" target="_blank"><img
+          src="https://img.icons8.com/material-outlined/24/000000/github.png" alt="Logo Github"/></a>
 
-      <a href="https://www.linkedin.com/in/julia-cruz-7aa339183/"><img
-          src="https://img.icons8.com/material-sharp/24/000000/linkedin--v1.png" /></a>
+      <a href="https://www.linkedin.com/in/julia-cruz-7aa339183/" target="_blank"><img
+          src="https://img.icons8.com/material-sharp/24/000000/linkedin--v1.png" alt="Logo Linkedin"/></a>
+
+      <a href="https://www.instagram.com/jbed.it" target="_blank"><img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png" alt="Logo Instagram"></a>
+
     </section>
   </footer>
 

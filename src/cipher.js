@@ -16,14 +16,13 @@ const cipher = {
       } else if (cifrar >= 58 && cifrar <= 64) {
         //pontos
         textCode += string.charAt(i);
-      } else if (cifrar == 128) {
-        //Ç
+      } else if (cifrar >= 91 && cifrar <= 96) {
         textCode += string.charAt(i);
-      } else if (cifrar == 135) {
-        //ç
+
+      } else if (cifrar >= 123 && cifrar <= 254) {
         textCode += string.charAt(i);
+
       } else if (cifrar == 32) {
-        //espaço
         textCode += string.charAt(i);
       }
     }
@@ -49,10 +48,10 @@ const cipher = {
       } else if (decifrar >= 58 && decifrar <= 64) {
         textDecode += string.charAt(i);
 
-      } else if (decifrar == 128) {
+      } else if (decifrar >= 91 && decifrar <= 96) {
         textDecode += string.charAt(i);
 
-      } else if (decifrar == 135) {
+      } else if (decifrar >= 123 && decifrar <= 254) {
         textDecode += string.charAt(i);
         
       } else if (decifrar == 32) {
