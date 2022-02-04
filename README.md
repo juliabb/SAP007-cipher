@@ -1,4 +1,6 @@
-# ![](/logo-github.png) M3ns4agem S3cret4 (Cifra de César/ Cipher)
+# M3ns4agem S3cret4 (Cifra de César/ Cipher)
+
+<div align="center"><img src="logo-github.png"/></div>
 
 ## Índice
 
@@ -49,10 +51,10 @@ Para usar o M3ns4agem S3cret4, basta digitar sua mensagem, frase ou palavra no c
 
 ## 4. Tecnologias utilizadas
 
-HTML5
-CSS3
-JavaScript
-Node.JS
+- HTML5
+- CSS3
+- JavaScript
+- Node.JS
 
 ## 5. Sobre a autora
 
