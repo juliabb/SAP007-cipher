@@ -8,10 +8,11 @@
 * [2. Sobre o produto](#2-sobre-o-produto)
 * [3. Como usar](#3-como-usar)
 * [4. Protótipo do projeto](#4-protótipo-do-projeto)
-* [4-1. Primeiro feito no papel](#6-primeiro-feito-no-papel)
-* [4-2. Segundo também no papel](#7-segundo-também-no-papel)
+* [4-1. Primeiro feito no papel](#4-1-primeiro-feito-no-papel)
+* [4-2. Segundo também no papel](#4-2-segundo-também-no-papel)
 * [5. Tecnologias utilizadas](#5-tecnologias-utilizadas)
-* [6. Sobre a autora](#8-sobre-a-autora)
+* [6. Resultado](#6-resultado)
+* [7. Sobre a autora](#7-sobre-a-autora)
 
 ---
 
@@ -121,7 +122,7 @@ Depois de iniciar a pesquisa do UX e JS, percebi que o prototipo anterior não e
 
 -  <a href="https://nodejs.org/pt-br/"><img src="https://img.icons8.com/color/32/000000/nodejs.png" alt="Node.JS"/></a>
 
-## Resultado 
+## 6. Resultado 
 Projeto desenvolvido utilizando a metodologia ágil <a href="https://fia.com.br/blog/scrum/#:~:text=A%20metodologia%20Scrum%20foi%20proposta,processos%20de%20gest%C3%A3o%20de%20projetos.">Scrum</a>, em 4 sprints.
 
 [Teste aqui](#)
@@ -129,7 +130,7 @@ Projeto desenvolvido utilizando a metodologia ágil <a href="https://fia.com.br/
 ![Tela final](src/img/tela-final.png "Tela final")
 
 
-## 6. Sobre a autora
+## 7. Sobre a autora
 
 Olá! Me chamo Julia Benedicto e sou aluna do bootcamp da Laborátoria, focado em desenvolvimento Front-end e este foi o primeiro projeto.
 
