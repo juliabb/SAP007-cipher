@@ -1,6 +1,10 @@
 # M3ns4agem S3cret4 (Cifra de César/ Cipher)
 
+<br>
+
 ![Logo Mensagem Secreta](logo-github.png "M3ns4agem S3cret4")
+
+<br>
 
 ## Índice
 
@@ -10,11 +14,13 @@
 * [4. Protótipo do projeto](#4-protótipo-do-projeto)
 * [4-1. Primeiro feito no papel](#4-1-primeiro-feito-no-papel)
 * [4-2. Segundo também no papel](#4-2-segundo-também-no-papel)
-* [5. Tecnologias utilizadas](#5-tecnologias-utilizadas)
-* [6. Resultado](#6-resultado)
+* [5. Resultado](#5-resultado)
+* [6. Tecnologias utilizadas](#6-tecnologias-utilizadas)
 * [7. Sobre a autora](#7-sobre-a-autora)
 
 ---
+
+<br>
 
 ## 1. Prefácio 
 
@@ -43,12 +49,16 @@ mas a cifra de César muitas vezes pode fazer parte de um sistema
 mais complexo de criptografia, como
 a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
+<br>
+
 ## 2. Sobre o produto
 
 Mensagem secreta é uma aplicação que permite o envio de mensagem para um amigo, familiar ou até namorado(a) utilizando qualquer mensageiro eletrônico (como Whatsapp, Facebook ou e-mail). As vezes precisamos enviar informações importantes ou até conversar sobre assuntos um pouco polêmicos e que não queremos que caia nas mãos (ou olhos) errados.
 Mensagem Secreta está aqui para garantir que sua mensagem será decifrada pela pessoa certa. 
 
 O usuário poderá cifrar e decifrar um texto indicando a chave de deslocamento (offset).
+
+<br>
 
 ## 3. Como usar 
 
@@ -63,11 +73,6 @@ A interface deve permitir ao usuário:
 - Ver o resultado da mensagem cifrada.
 - Inserir uma mensagem (texto) para ser decifrada.
 - Ver o resultado da mensagem decifrada.
-
-<br>
-
----
-
 
 <br>
 
@@ -88,9 +93,6 @@ Depois de definir o tema e começar a pensar na cor comecei o desenho do prototi
 
 <br>
 
----
-
-<br>
 
 ## 4-2. Segundo também no papel
 
@@ -110,8 +112,22 @@ Depois de iniciar a pesquisa do UX e JS, percebi que o prototipo anterior não e
 - 1 caixa com resultado (cifrado e decifrado)
 - Footer/ Rodapé
 
+<br>
 
-## 5. Tecnologias utilizadas
+## 5. Resultado 
+Projeto desenvolvido utilizando a metodologia ágil <a href="https://fia.com.br/blog/scrum/#:~:text=A%20metodologia%20Scrum%20foi%20proposta,processos%20de%20gest%C3%A3o%20de%20projetos.">Scrum</a>, em 4 sprints.
+
+<br>
+
+## Deploy
+Disponível em [Github Pages](https://juliabb.github.io/SAP007-cipher/)
+
+<br>
+
+![Tela final](src/img/tela-final.png "Tela final")
+
+
+## 6. Tecnologias utilizadas
 <br>
 
 - <a href="https://www.w3schools.com/html/"><img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/32/000000/external-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-logo-shadow-tal-revivo.png" alt="HTML5"/></a>
@@ -122,17 +138,13 @@ Depois de iniciar a pesquisa do UX e JS, percebi que o prototipo anterior não e
 
 -  <a href="https://nodejs.org/pt-br/"><img src="https://img.icons8.com/color/32/000000/nodejs.png" alt="Node.JS"/></a>
 
-## 6. Resultado 
-Projeto desenvolvido utilizando a metodologia ágil <a href="https://fia.com.br/blog/scrum/#:~:text=A%20metodologia%20Scrum%20foi%20proposta,processos%20de%20gest%C3%A3o%20de%20projetos.">Scrum</a>, em 4 sprints.
-
-[Teste aqui](#)
-
-![Tela final](src/img/tela-final.png "Tela final")
-
 
 ## 7. Sobre a autora
 
-Olá! Me chamo Julia Benedicto e sou aluna do bootcamp da Laborátoria, focado em desenvolvimento Front-end e este foi o primeiro projeto.
+
+Olá! Me chamo *Julia Benedicto* e sou aluna do bootcamp da Laborátoria, focado em desenvolvimento Front-end e este foi o primeiro projeto.
+
+<img src="https://avatars.githubusercontent.com/u/68789655?v=4" width="30%" align="right">
 
 Saiba mais:
 
