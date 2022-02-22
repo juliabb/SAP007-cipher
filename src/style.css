@@ -47,7 +47,7 @@
     color: brown;
   }
 
-  header .logo-text {
+  .logo-text {
     justify-content: center;
     display: flex;
     align-items: center;

@@ -15,6 +15,8 @@
 * [4-1. Primeiro feito no papel](#4-1-primeiro-feito-no-papel)
 * [4-2. Segundo também no papel](#4-2-segundo-também-no-papel)
 * [5. Resultado](#5-resultado)
+* [5-1. Deploy](#5-1-deploy)
+* [5-2. Testes](#5-2-testes)
 * [6. Tecnologias utilizadas](#6-tecnologias-utilizadas)
 * [7. Sobre a autora](#7-sobre-a-autora)
 
@@ -52,6 +54,7 @@ a cifra de Vigenère, e tem aplicação no sistema ROT13.
 <br>
 
 ## 2. Sobre o produto
+Acesso pelo [Github Pages](https://juliabb.github.io/SAP007-cipher/)
 
 Mensagem secreta é uma aplicação que permite o envio de mensagem para um amigo, familiar ou até namorado(a) utilizando qualquer mensageiro eletrônico (como Whatsapp, Facebook ou e-mail). As vezes precisamos enviar informações importantes ou até conversar sobre assuntos um pouco polêmicos e que não queremos que caia nas mãos (ou olhos) errados.
 Mensagem Secreta está aqui para garantir que sua mensagem será decifrada pela pessoa certa. 
@@ -100,7 +103,7 @@ Depois de definir o tema e começar a pensar na cor comecei o desenho do prototi
 
 <img src="src/img/desenho-02.jpg" alt="Protótipo 02" width="80%">
 
-<br>
+ <br>
 
 Depois de iniciar a pesquisa do UX e JS, percebi que o prototipo anterior não estava tão viavel e não estava tão acessivel para o usuário. Pensando nisso ele foi alterado para algo mais simples e dinâmico.
 
@@ -119,13 +122,23 @@ Projeto desenvolvido utilizando a metodologia ágil <a href="https://fia.com.br/
 
 <br>
 
-## Deploy
+## 5-1.  Deploy
 Disponível em [Github Pages](https://juliabb.github.io/SAP007-cipher/)
 
 <br>
 
 ![Tela final](src/img/tela-final.png "Tela final")
 
+<br>
+<br>
+
+## 5-2. Testes 
+Projeto passou em todos os testes, alcançando assim 100% dos objetivos.
+
+![Resultado-Testes](test.png "Resultados Testes")
+
+<br> 
+<br>
 
 ## 6. Tecnologias utilizadas
 <br>

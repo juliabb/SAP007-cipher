@@ -1,79 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="page-html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M3ns4agem S3cret4</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/icon" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>M3ns4agem S3cret4</title>
-  <link rel="shortcut icon" href="favicon-32x32.png" type="image/icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body class="backgroung-page">
-  <header>
-    <a href="index.html" id="home">
-    <section class="logo-text">
-    </a>
+  <body class="backgroung-page">
+    <header class="logo-text">
+      <a href="index.html" id="home"></a>
       <div class="image">
         <img src="img/logo-512x512.png" alt="Logo" />
       </div>
       <h1 class="title-text">M3ns4agem S3cret4</h1>
-    </section>
-  </header>
+    </header>
     <main>
-    <section class="box-text">
-      <p>
-        Mensagem secreta é um sistema para se comunicar de forma confidencial e segura, utilizado para e-mails e
-        mensagens instantâneas. Utiliza a famosa
-        <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank" class="link-cesar">Cifra de César</a> que
-        utiliza um sistema de deslocamento. Para utilizar é simples basta escrever sua palavra/frase e escolher o número
-        de deslocamento, sendo da esquerda a direita, Ex.: se você colocar a letra 'A' com deslocamento '3' o resultado
-        será 'D'. E para decifrar basta fazer o mesmo cole a cifra que recebeu e informe qual foi o deslocamento
-        utilizado.
-      </p>
-    </section>
+      <section class="box-text">
+        <p>
+          Mensagem secreta é um sistema para se comunicar de forma confidencial
+          e segura, utilizado para e-mails e mensagens instantâneas. Utiliza a
+          famosa
+          <a
+            href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar"
+            target="_blank"
+            class="link-cesar"
+            >Cifra de César</a
+          >
+          que utiliza um sistema de deslocamento. Para utilizar é simples basta
+          escrever sua palavra/frase e escolher o número de deslocamento, sendo
+          da esquerda a direita, Ex.: se você colocar a letra 'A' com
+          deslocamento '3' o resultado será 'D'. E para decifrar basta fazer o
+          mesmo cole a cifra que recebeu e informe qual foi o deslocamento
+          utilizado.
+        </p>
+      </section>
 
-    <form class="form-cipher">
-      <div class="enter-text">
-        <label for="text" class="label-text"> Digite seu texto:</label>
-        <textarea class="text" id="text" placeholder="Digite aqui" autocapitalize="characters" maxlength="500" rows="10"
-          cols="50"></textarea>
-      </div>
+      <form class="form-cipher">
+        <div class="enter-text">
+          <label for="text" class="label-text"> Digite seu texto:</label>
+          <textarea
+            class="text"
+            id="text"
+            placeholder="Digite aqui"
+            autocapitalize="characters"
+            maxlength="500"
+            rows="10"
+            cols="50"
+          ></textarea>
+        </div>
 
-      <div class="offset">
-        <label for="offset" class="label-text">Escolha o deslocamento:</label>
-        <input type="number" id="offset" min="1" max="25" value="2"/>
+        <div class="offset">
+          <label for="offset" class="label-text">Escolha o deslocamento:</label>
+          <input type="number" id="offset" min="1" max="25" value="2" />
 
-        <button class="buttonCipher buttons" id="buttonCipher"> Cifrar </button>
-        <button class="buttonDecipher buttons" id="buttonDecipher"> Decifrar </button>
-      </div>
-    </form>
-    <section class="answer">
-      <label class="result-title">Resultado:</label>
-      <textarea id="answers" class="result" rows="10" cols="50" placeholder="Resultado" readonly></textarea>
-    </section>
+          <button class="buttonCipher buttons" id="buttonCipher">Cifrar</button>
+          <button class="buttonDecipher buttons" id="buttonDecipher">
+            Decifrar
+          </button>
+        </div>
+      </form>
+      <section class="answer">
+        <label class="result-title">Resultado:</label>
+        <textarea
+          id="answers"
+          class="result"
+          rows="10"
+          cols="50"
+          placeholder="Resultado"
+          readonly
+        ></textarea>
+      </section>
+    </main>
+    <footer class="credit">
+      <a href="#home"
+        ><img src="img/logo-512x512.png" alt="Logo" class="image"
+      /></a>
+      <p>Desenvolvido por Julia Benedicto &copy Copyright Cipher - 2022</p>
 
+      <section class="icons">
+        <a href="https://github.com/juliabb" target="_blank"
+          ><img
+            src="https://img.icons8.com/material-outlined/24/000000/github.png"
+            alt="Logo Github"
+        /></a>
 
-  </main>
-  <footer class="credit">
-    <a href="#home"><img src="img/logo-512x512.png" alt="Logo" class="image"></a>
-    <p>Desenvolvido por Julia Benedicto &copy Copyright Cipher - 2022</p>
+        <a
+          href="https://www.linkedin.com/in/julia-cruz-7aa339183/"
+          target="_blank"
+          ><img
+            src="https://img.icons8.com/material-sharp/24/000000/linkedin--v1.png"
+            alt="Logo Linkedin"
+        /></a>
 
-    <section class="icons">
-      <a href="https://github.com/juliabb" target="_blank"><img
-          src="https://img.icons8.com/material-outlined/24/000000/github.png" alt="Logo Github"/></a>
+        <a href="https://www.instagram.com/jbed.it" target="_blank"
+          ><img
+            src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png"
+            alt="Logo Instagram"
+        /></a>
+      </section>
+    </footer>
 
-      <a href="https://www.linkedin.com/in/julia-cruz-7aa339183/" target="_blank"><img
-          src="https://img.icons8.com/material-sharp/24/000000/linkedin--v1.png" alt="Logo Linkedin"/></a>
-
-      <a href="https://www.instagram.com/jbed.it" target="_blank"><img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png" alt="Logo Instagram"></a>
-
-    </section>
-  </footer>
-
-  <script src="index.js" type="module"></script>
-</body>
-
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
