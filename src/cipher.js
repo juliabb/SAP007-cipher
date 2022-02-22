@@ -1,99 +1,47 @@
 const cipher = {
   encode: function (offset, string) {
-    if (offset == 0 || offset == null || offset == undefined) {
-      throw new TypeError()     //Mensagem de erro 
+    if (!offset) {
+      throw new TypeError();
     }
 
-    let textCode = "";    //variavel da resposta
+    let textCode = "";
 
-    for (let i = 0; i < string.length; i++) {     //loop para continuar enquanto houver letras
+    for (let i = 0; i < string.length; i++) {
+      let cifrar = string.charCodeAt(i);
 
-      let cifrar = string.charCodeAt(i);    //transforma o alfabeto padrao para o ASC (numero)
-
-      if (cifrar >= 65 && cifrar <= 90) {   //ler apenas de A a Z maiusculas
-        textCode += String.fromCharCode((cifrar - 65 + offset) % 26 + 65);     //calculo do deslocamento para cifrar
-        //String.fromCharCode transforma o ASC em letra
-
-      } else if (cifrar >= 97 && cifrar <= 122) {     // minusculas
-        textCode += String.fromCharCode((cifrar - 97 + offset) % 26 + 97);
-
-      } else if (cifrar >= 33 && cifrar <= 47) {  //pontos
-        textCode += string.charAt(i);  //charAt retorna o caractere especificado a partir de uma string no caso esta sendo usado para manter os pontos (sem cifrar)
-
-      } else if (cifrar >= 58 && cifrar <= 64) {   //pontos e caracteres
-        textCode += string.charAt(i);
-
-      } else if (cifrar >= 91 && cifrar <= 96) {    //acento
-        textCode += string.charAt(i); 
-                          
-      } else if (cifrar >= 123 && cifrar <= 254) {    //barras, acentos, ç, sinais
-        textCode += string.charAt(i);
-
-      } else if (cifrar == 32) { //espaço entre palavras
+      if (cifrar >= 65 && cifrar <= 90) {
+        textCode += String.fromCharCode(((cifrar - 65 + offset) % 26) + 65);
+      } else if (cifrar >= 97 && cifrar <= 122) {
+        textCode += String.fromCharCode(((cifrar - 97 + offset) % 26) + 97);
+      } else {
         textCode += string.charAt(i);
       }
     }
-    return textCode; //retorna o resultado da cifra
+    return textCode;
   },
 
   decode: function (offset, string) {
-    if (offset == 0 || offset == null || offset == undefined) {
+    if (!offset) {
       throw new TypeError();
     }
 
     let textDecode = "";
 
     for (let i = 0; i < string.length; i++) {
-
       let decifra = string.charCodeAt(i);
 
       if (decifra >= 65 && decifra <= 90) {
-        textDecode += String.fromCharCode((decifra + 65 - offset) % 26 + 65);
-
+        textDecode += String.fromCharCode(((decifra + 65 - offset) % 26) + 65);
       } else if (decifra >= 97 && decifra <= 122) {
-        textDecode += String.fromCharCode((decifra - 122 - offset) % 26 + 122); 
-
-      } else if (decifra >= 33 && decifra <= 47) {
-
-        textDecode += string.charAt(i);
-
-      } else if (decifra >= 58 && decifra <= 64) {
-
-        textDecode += string.charAt(i);
-
-      } else if (decifra >= 91 && decifra <= 96) {
-        textDecode += string.charAt(i);
-
-      } else if (decifra >= 123 && decifra <= 254) {
-        textDecode += string.charAt(i);
-
-      } else if (decifra == 32) {
+        textDecode += String.fromCharCode(
+          ((decifra - 122 - offset) % 26) + 122
+        );
+      } else {
         textDecode += string.charAt(i);
       }
     }
     return textDecode;
-  }
+  },
 };
 
 export default cipher;
-
-/* let answerCifra = ""; // lugar onde vai aparecer a resposta
-let deslocamento = document.getElementById('offset_1');
-
-let quantiLetras = mensagemCifra.length; // lendo a quantidade de letra - length é leitura
-for (let i = 0; quantiLetras > i; i++) {
-  let codigoAsc = mensagemCifra.charCodeAt(i);
-  
-  let encodeValue =
-  ((codigoAsc - valorLetraAsc + deslocamento) % 26) + codigoAsc;
-  answerCifra = answerCifra.concat(mensagemCifra.fromCharCode(encodeValue));
-}
-
-Código ASC - A = 65 .... Z = 90
-        ((codigoDaLetraASC - cod1Letra + desloc) % tamAlfabeto) + cod1Letra
-
-        codigoASC => codigo0a25 => desloco => giro (loop) => codigoASC 
-    
-      cipher.encode(offset, string): offset é o número de posições que queremos mover para a direita no alfabeto e string é a mensagem (texto) que queremos cifrar.
-
-*/

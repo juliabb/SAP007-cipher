@@ -7,20 +7,19 @@
   }
 
   :root {
-    /* Fonts/ Fontes*/
     --title-font: "Nunito", sans-serif;
     --body-font: "Share Tech", sans-serif;
   }
   
-  html {
-    scroll-behavior: smooth; /* scroll suave */
+  .page-html {
+    scroll-behavior: smooth;
   } 
 
   head #home {
     transition: 1.5s;
   }
   
-  body {
+  .backgroung-page {
     background-image: url(https://images.pexels.com/photos/568025/pexels-photo-568025.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,7 +27,7 @@
     background-color: #030303;
   }
 
-  h1 {
+  .title-text {
     font-family: var(--title-font);
     text-align: center;
     justify-content: center;
@@ -37,18 +36,18 @@
     font-size: xx-large; 
   }
 
-  main .box-text p {
+  main .box-text {
     text-align: center;
     font-family: var(--body-font);
     background-color: rgb(240 248 255 / 60%);
   }
 
-  a {
+  main .box-text .link-cesar {
     text-decoration: none;
     color: brown;
   }
 
-  main .logo-text {
+  header .logo-text {
     justify-content: center;
     display: flex;
     align-items: center;
@@ -56,31 +55,31 @@
     margin-bottom: 40px;
   }
 
-  main .image img {
+  header .image img {
     width: 60px;
     display: flex;
     margin-right: 32px;
   }
 
-  main .box-text p {
+  main .box-text {
     margin: 32px 12rem;
     padding: 32px;
     font-size: larger;
   }
 
-  main form {
+  main .form-cipher {
     display: flex;
     align-items: center;
     margin-bottom: 3rem;
   }
 
-  main form .enter-text{
+  main .form-cipher .enter-text{
     margin: 2rem 5rem;
     display: flex;
     align-items: center;
   }
 
-  main form label {
+  main .form-cipher .label-text{
     font-family: var(--body-font);
     color: aliceblue;
     font-size: large;
@@ -90,7 +89,7 @@
     margin-right: 25px;
   }
 
-  main form textarea {
+  main .form-cipher #text {
     resize: none;
     border: 2px solid;
     padding: 3px;
@@ -100,25 +99,26 @@
     font-family: var(--title-font);
   }
 
-  main form .offset {
+  main .offset {
     text-align: left;
     margin-right: 10rem;
     display: inherit;
   }
 
-  main form #offset {
+  main .offset #offset {
     margin-right: 15px;
     padding: 4px;
+    outline: none;
   }
 
-  main form .buttons {
+  .offset .buttons {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-left: 10px;
   }
 
-  main form .buttons {
+  .offset .buttons {
     font-family: var(--title-font);
     background: #030303;
     color: aliceblue;
@@ -128,7 +128,7 @@
     padding: 4px;
   }
 
-  main form .buttons:hover {
+  .offset .buttons:hover {
     background: grey;
     transition: 1s;
   }
