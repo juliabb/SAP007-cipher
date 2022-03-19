@@ -13,8 +13,8 @@
   <body class="backgroung-page">
     <header class="logo-text">
       <a href="index.html" id="home"></a>
-      <div class="image">
-        <img src="img/logo-512x512.png" alt="Logo" />
+      <div class="image-container">
+        <img src="img/logo-512x512.png" alt="Logo" class="logo-image"/>
       </div>
       <h1 class="title-text">M3ns4agem S3cret4</h1>
     </header>
@@ -43,8 +43,8 @@
         <div class="enter-text">
           <label for="text" class="label-text"> Digite seu texto:</label>
           <textarea
-            class="text"
-            id="text"
+            class="text-insert"
+            id="text-insert"
             placeholder="Digite aqui"
             autocapitalize="characters"
             maxlength="500"
@@ -55,29 +55,21 @@
 
         <div class="offset">
           <label for="offset" class="label-text">Escolha o deslocamento:</label>
-          <input type="number" id="offset" min="1" max="25" value="2" />
+          <input type="number" id="offset" min="1" max="25" value="2" class="input-offset" />
 
+          <div class="aling-buttons">
           <button class="buttonCipher buttons" id="buttonCipher">Cifrar</button>
           <button class="buttonDecipher buttons" id="buttonDecipher">
             Decifrar
           </button>
         </div>
+        </div>
       </form>
-      <section class="answer">
-        <label class="result-title">Resultado:</label>
-        <textarea
-          id="answers"
-          class="result"
-          rows="10"
-          cols="50"
-          placeholder="Resultado"
-          readonly
-        ></textarea>
-      </section>
+        <div class="result-show visible" id="result-show"></div>
     </main>
     <footer class="credit">
       <a href="#home"
-        ><img src="img/logo-512x512.png" alt="Logo" class="image"
+        ><img src="img/logo-512x512.png" alt="Logo" class="image-credit"
       /></a>
       <p>Desenvolvido por Julia Benedicto &copy Copyright Cipher - 2022</p>
 

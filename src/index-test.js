@@ -9,7 +9,7 @@ function buttonCipher (e){
 
      e.preventDefault() //impede o recarregamento auto da página
      let offset = Number(document.getElementById('offset').value); //lendo o valor do Numero do input
-     let string = document.getElementById('text').value; //lendo o valor string da textarea
+     let string = document.getElementById('text-insert').value; //lendo o valor string da textarea
 
      const resultadoCifra = cipher.encode(offset, string); //puxando o resultado da função da cifra dentro cipher.js
 
@@ -26,7 +26,7 @@ function buttonDecipher (e){
 
      e.preventDefault() //impede o recarregamento auto da página
      let offset = Number(document.getElementById('offset').value);
-     let string = document.getElementById('text').value; 
+     let string = document.getElementById('text-insert').value; 
 
      const resultadoDecifra = cipher.decode(offset, string);
 
