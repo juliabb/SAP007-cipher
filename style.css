@@ -1,192 +1,284 @@
-  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Share+Tech&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Share+Tech&display=swap");
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  :root {
-    --title-font: "Nunito", sans-serif;
-    --body-font: "Share Tech", sans-serif;
-  }
-  
-  .page-html {
-    scroll-behavior: smooth;
-  } 
+:root {
+  --title-font: "Nunito", sans-serif;
+  --body-font: "Share Tech", sans-serif;
+}
 
-  head #home {
-    transition: 1.5s;
-  }
-  
-  .backgroung-page {
-    background-image: url(https://images.pexels.com/photos/568025/pexels-photo-568025.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #030303;
-  }
+.page-html {
+  scroll-behavior: smooth;
+}
 
+#home {
+  transition: 1.5s;
+}
+
+.backgroung-page {
+  background-image: url(https://images.pexels.com/photos/568025/pexels-photo-568025.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #030303;
+}
+
+.logo-text {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.logo-image {
+  width: 4em;
+  display: flex;
+  margin-left: 1em;
+}
+
+.title-text {
+  font-family: var(--title-font);
+  text-align: center;
+  justify-content: center;
+  color: aliceblue;
+  text-shadow: 3px 1px 3px black;
+  font-size: 2rem;
+}
+
+.box-text {
+  margin: 1em;
+  padding: 10%;
+  font-size: larger;
+  text-align: inherit;
+  font-family: var(--body-font);
+  background-color: rgb(240 248 255 / 60%);
+}
+
+.link-cesar {
+  text-decoration: none;
+  color: brown;
+}
+
+.form-cipher {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.enter-text {
+  margin: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.label-text {
+  font-family: var(--body-font);
+  color: aliceblue;
+  font-size: large;
+  background-color: #0303039f;
+  padding: 4px 4px;
+  border-radius: 2px;
+  margin: auto 1rem;
+}
+
+.text-insert {
+  resize: none;
+  border: 2px solid;
+  padding: 3px;
+  word-wrap: break-word;
+  outline: none;
+  margin-top: 2rem;
+  font-family: var(--title-font);
+  width: 20em;
+  height: 10rem;
+}
+
+.offset {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.input-offset {
+  margin-right: 15px;
+  padding: 4px;
+  outline: none;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin: 1em auto;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto 1rem;
+}
+
+.buttons {
+  font-family: var(--title-font);
+  background: #030303;
+  color: aliceblue;
+  font-weight: bolder;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+.buttons:hover {
+  background: grey;
+  transition: 1s;
+}
+
+.answer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.result-title {
+  display: flex;
+  align-items: center;
+  block-size: 32px;
+  font-family: var(--body-font);
+  color: aliceblue;
+  font-size: large;
+  background-color: #0303039f;
+  padding: 4px 4px;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.result-show{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word;
+  margin: 2rem;
+  line-height: 1.3em;
+  padding: 1rem;
+}
+
+.result-show.result{
+  color: white;
+  background-color: rgb(55 5 255 / 60%);
+}
+
+.result-show.error {
+  color: black;
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.credit {
+  margin-top: 5rem;
+  font-family: var(--body-font);
+  padding: 2rem 1rem;
+  background-color: rgba(240, 248, 255, 0.6);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image-credit {
+  width: 60px;
+  display: flex;
+  margin-right: 32px;
+  display: flex;
+}
+
+.icons {
+  display: initial;
+}
+
+@media (min-width: 387px){
+.logo-image {
+  width: 3em;
+  margin-right: 1em;
+}
+.title-text{
+  font-size: 1.7rem;
+}
+}
+
+@media (min-width: 600px){
+  .logo-image {
+    width: 4em;
+    margin-left: 0;
+    margin-right: 2em;
+}
+.box-text {
+  padding: 8%;
+  font-size: 1.2em;
+  margin-top: 3em;
+}
+
+.offset {
+  margin-right: 2em;
+}
+
+.result-show.error {
+  padding: 2em;
+  font-size: 1.2em;
+}
+.image-credit{
+  margin: auto;
+}
+.img-social-networks{
+  width: 1.7em;
+}
+}
+
+@media (min-width:  970px) and (max-width: 2560px){
   .title-text {
-    font-family: var(--title-font);
-    text-align: center;
-    justify-content: center;
-    color: aliceblue;
-    text-shadow: 3px 1px 3px black;
-    font-size: xx-large; 
-  }
+    font-size: 3rem;
+}
 
-  main .box-text {
-    text-align: center;
-    font-family: var(--body-font);
-    background-color: rgb(240 248 255 / 60%);
-  }
+.box-text{
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+.form-cipher {
+  flex-wrap: inherit;
+}
+.label-text {
+  font-size: 1.2em;
+}
+.text-insert{
+  font-size: 1.2em;
+}
 
-  main .box-text .link-cesar {
-    text-decoration: none;
-    color: brown;
-  }
+.input-offset{
+  font-size: 1em;
+  margin-left: 1em;
+}
 
-  header .logo-text {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin-top: 32px;
-    margin-bottom: 40px;
-  }
+.buttons{
+  padding: 10px;
+  font-size: 1em;
+}
 
-  header .image img {
-    width: 60px;
-    display: flex;
-    margin-right: 32px;
-  }
-
-  main .box-text {
-    margin: 32px 12rem;
-    padding: 32px;
-    font-size: larger;
-  }
-
-  main .form-cipher {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3rem;
-  }
-
-  main .form-cipher .enter-text{
-    margin: 2rem 5rem;
-    display: flex;
-    align-items: center;
-  }
-
-  main .form-cipher .label-text{
-    font-family: var(--body-font);
-    color: aliceblue;
-    font-size: large;
-    background-color: #0303039f;
-    padding: 4px 4px;
-    border-radius: 2px;
-    margin-right: 25px;
-  }
-
-  main .form-cipher #text {
-    resize: none;
-    border: 2px solid;
-    padding: 3px;
-    word-wrap: break-word;
-    outline: none; /*remove a borda do click*/
-    margin-top: 2rem;
-    font-family: var(--title-font);
-  }
-
-  main .offset {
-    text-align: left;
-    margin-right: 10rem;
-    display: inherit;
-  }
-
-  main .offset #offset {
-    margin-right: 15px;
-    padding: 4px;
-    outline: none;
-  }
-
-  .offset .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-left: 10px;
-  }
-
-  .offset .buttons {
-    font-family: var(--title-font);
-    background: #030303;
-    color: aliceblue;
-    font-weight: bolder;
-    border: 1px solid gray;
-    border-radius: 6px;
-    padding: 4px;
-  }
-
-  .offset .buttons:hover {
-    background: grey;
-    transition: 1s;
-  }
-
-  main .answer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  main .answer .result-title {
-    display: flex;
-    align-items: center;
-    margin-right: 32px;
-    block-size: 32px;
-    font-family: var(--body-font);
-    color: aliceblue;
-    font-size: large;
-    background-color: #0303039f;
-    padding: 4px 4px;
-    border-radius: 2px;
-    margin-right: 25px;
-  }
-
-  main .answer #answers {
-    word-wrap: break-word;
-    resize: none;
-    border: 2px solid green;
-    outline: none;
-    background: whitesmoke;
-    color: black;
-    line-height: 20px;
-    border-radius: 6px;
-    padding: 6px;
-    font-family: var(--title-font);
-  }
-
-  .credit {
-    margin-top: 10rem;
-    text-align: center;
-    font-family: var(--body-font);
-    padding: 3rem;
-    background-color: rgba(240, 248, 255, 0.6);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  footer .image{
-    width: 60px;
-    display: flex;
-    margin-right: 32px;
-    display: flex;
-  } 
-
-  footer .icons {
-    display: initial;
-  }
-
-  
+.result-show.result{
+  margin: 1em 10%;
+  font-size: 1.4em;
+}
+.credit{
+  font-size: 1.3em;
+}
+.img-social-networks{
+  width: 1.5em;
+}
+}
