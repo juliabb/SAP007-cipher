@@ -15,8 +15,7 @@
 * [4-1. Primeiro feito no papel](#4-1-primeiro-feito-no-papel)
 * [4-2. Segundo também no papel](#4-2-segundo-também-no-papel)
 * [5. Resultado](#5-resultado)
-* [5-1. Deploy](#5-1-deploy)
-* [5-2. Testes](#5-2-testes)
+* [5-1. Testes](#5-1-testes)
 * [6. Tecnologias utilizadas](#6-tecnologias-utilizadas)
 * [7. Sobre a autora](#7-sobre-a-autora)
 
@@ -118,20 +117,16 @@ Depois de iniciar a pesquisa do UX e JS, percebi que o prototipo anterior não e
 <br>
 
 ## 5. Resultado 
-Projeto desenvolvido utilizando a metodologia ágil <a href="https://fia.com.br/blog/scrum/#:~:text=A%20metodologia%20Scrum%20foi%20proposta,processos%20de%20gest%C3%A3o%20de%20projetos.">Scrum</a>, em 4 sprints.
-
-<br>
-
-## 5-1.  Deploy
 Disponível em [Github Pages](https://juliabb.github.io/SAP007-cipher/)
 
 <br>
-![Tela final](src/img/versao-1.1.png "Tela final")
+
+![Tela final](src/img/v1.1.png "Tela final")
 
 <br>
 <br>
 
-## 5-2. Testes 
+## 5-1. Testes 
 Projeto passou em todos os testes, alcançando assim 100% dos objetivos.
 
 ![Resultado-Testes](test.png "Resultados Testes")
@@ -142,13 +137,7 @@ Projeto passou em todos os testes, alcançando assim 100% dos objetivos.
 ## 6. Tecnologias utilizadas
 <br>
 
-- <a href="https://www.w3schools.com/html/"><img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/32/000000/external-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-logo-shadow-tal-revivo.png" alt="HTML5"/></a>
-
--  <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"><img src="https://img.icons8.com/color/32/000000/css3.png" alt="CSS3"/></a>
-
--  <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"><img src="https://img.icons8.com/color/32/000000/javascript--v1.png" alt="JavaScript"/></a>
-
--  <a href="https://nodejs.org/pt-br/"><img src="https://img.icons8.com/color/32/000000/nodejs.png" alt="Node.JS"/></a>
+<a href="https://www.w3schools.com/html/"><img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/32/000000/external-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-logo-shadow-tal-revivo.png" alt="HTML5"/></a> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"><img src="https://img.icons8.com/color/32/000000/css3.png" alt="CSS3"/></a> <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"><img src="https://img.icons8.com/color/32/000000/javascript--v1.png" alt="JavaScript"/></a> <a href="https://nodejs.org/pt-br/"><img src="https://img.icons8.com/color/32/000000/nodejs.png" alt="Node.JS"/></a>
 
 
 ## 7. Sobre a autora
@@ -156,13 +145,9 @@ Projeto passou em todos os testes, alcançando assim 100% dos objetivos.
 
 Olá! Me chamo *Julia Benedicto* e sou aluna do bootcamp da Laborátoria, focado em desenvolvimento Front-end e este foi o primeiro projeto.
 
-<img src="https://avatars.githubusercontent.com/u/68789655?v=4" width="30%" align="right">
+<img src="https://avatars.githubusercontent.com/u/68789655?v=4" width="20%" align="right">
 
 Saiba mais:
 
-- <a href="https://www.linkedin.com/in/julia-cruz-7aa339183/">![Logo Linkedin](https://img.icons8.com/material-sharp/24/000000/linkedin--v1.png "Linkedin")</a>
-
-- <a href="https://www.instagram.com/jbed.it/">![Logo Instagram](https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png "Instagram")</a>
-
-- <a href="https://github.com/juliabb">![Logo Github](https://img.icons8.com/material-outlined/24/000000/github.png "Github") </a>
+<a href="https://www.linkedin.com/in/julia-benedicto/"><img src="https://img.icons8.com/material-sharp/24/000000/linkedin--v1.png"></a> <a href="https://www.instagram.com/jbed.it/"><img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png"></a> <a href="https://github.com/juliabb/"><img src="https://img.icons8.com/material-outlined/24/000000/github.png"></a>
 
