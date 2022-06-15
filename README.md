@@ -126,8 +126,7 @@ Projeto desenvolvido utilizando a metodologia ágil <a href="https://fia.com.br/
 Disponível em [Github Pages](https://juliabb.github.io/SAP007-cipher/)
 
 <br>
-
-![Tela final](src/img/tela-final.png "Tela final")
+![Tela final](src/img/versao-1.1.png "Tela final")
 
 <br>
 <br>
